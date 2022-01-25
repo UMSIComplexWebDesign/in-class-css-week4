@@ -1,0 +1,60 @@
+/* DO NOT SHARE THIS FILE */
+
+/* Part 1: List of cities by population */
+
+/*GSI Note #1:  Note that we don't technically need to 
+include color because the default is black; */
+
+
+/* GSI Note #2: Perhaps suggest that people use 
+
+nth-child(2), nth-child(4), nth-child(6), nth-child(8), nth-child(10)
+
+and then point out that isn't very scalable and suggest that
+they Google a better approach */
+
+li:nth-child(even){
+    background:red;
+}
+
+li:nth-child(odd){
+    background:#BEEEEF;
+}
+
+/* GSI Note #3: Don't tell them about the "n".  They will see
+it is a problem when they go to test-your-work.*/
+
+li:nth-child(10n){
+    margin-bottom:50px;
+}
+
+/* GSI Note #4: Most people will put "0" but talk about how
+inherit is a better choice */
+
+li:last-child{
+    margin-bottom: inherit;
+}
+
+/* IMPORTANT
+Use Inspect Element to show them how the different styles
+are applied to the final list item!!  Show them how the 
+styles "come" from three places but it from two. */
+
+/* Part 2: Photos with hover */
+
+/* GSI Note #5: Make them Google border and margin!! */
+/* GSI Note #6: Make them Google border and margin!! */
+
+img{
+    border: 5px solid black;
+    margin:10px;
+}
+
+/* GSI Note #8: I wouldn't expect them to do this in one line
+but show it to them when you are all done. */
+
+/* Go ahed and let people use a:focus.  They will then see
+that it doesn't cover all of the cases.*/
+img:hover, *:focus{
+    box-shadow: 10px 10px #376F70
+}
